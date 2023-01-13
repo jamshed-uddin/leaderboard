@@ -1,68 +1,110 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 
 /* font */
-    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Open+Sans&family=Poppins&family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Open+Sans&family=Poppins&family=Work+Sans:wght@500&display=swap');
 
-    /* utilities */
-    body{
-        font-family: 'Poppins', sans-serif;
-        background-color: #F3F1FF;
-    }
+/* utilities */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
 
-    /* main{
+/* main{
         display: flex;
         justify-content: center;
     } */
 
-    .container{
-        background-color: #FFFFFF;
-        border-radius: 5px;
-        max-width: 870px;
-        padding: 30px;
-        margin: 0 auto;
-        margin-top: 35px;
-    }
+.container {
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    max-width: 870px;
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
 
-    
+
 /* hr{
     color: #D1D1D1;
     border: 1px solid #D1D1D1;
     margin: 30px 0;
 } */
 
-    .line {
-        display: inline-block;
-        width: 100%;
-        margin-top: 30px;
-        border-top: 1.5px solid #D1D1D1;
-      }
+.line {
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1.5px solid #D1D1D1;
+}
 
+/* -------
+header and nav secttion
+--------- */
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 350px;
+    background-color: #562EFF;
+    color: #FFFFFF;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.navbar nav ul {
+    display: flex;
+    gap: 35px;
+    list-style-type: none;
+}
+
+.navbar nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header .logo img {
+    width: 40.42px;
+    height: 51px;
+}
 
 
 /* top player styles */
-.section-title{
+.section-title {
     color: #562EFF;
     font-size: 24px;
     margin-bottom: 40px;
 }
 
-.players{
+.players {
     display: grid;
     row-gap: 30px;
     column-gap: 50px;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.player{
+.player {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-.player h3{
+
+.player h3 {
     font-size: 18px;
 }
 
@@ -72,47 +114,106 @@
 }
 
 /* ------top blogs section----------- */
-.top-blogs{
+.top-blogs {
     margin: 30px 0;
 }
 
-.blog .thumbnail img{
+.blog .thumbnail img {
 
     width: 177px;
-height: 117px;
+    height: 117px;
 }
-.blog-info{
+
+.blog-info {
     margin: 10px 20px 0 0;
 
 }
 
-.blogs-container{
+.blogs-container {
     display: grid;
     column-gap: 30px;
     row-gap: 25px;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.blog{
+.blog {
     display: flex;
     gap: 15px;
 }
 
 
-.blog .blog-info .blog-title{
-    font-weight: 500;
-font-size: 20px;
-line-height: 34px;
+.blog .blog-info .blog-title {
+    font-weight: 550;
+    font-size: 20px;
+    line-height: 34px;
 }
 
-.blog .blog-info .blog-author{
-    color:  #9F9F9F;
+.blog .blog-info .blog-author {
+    color: #9F9F9F;
     font-size: 16px;
-line-height: 24px;
+    line-height: 24px;
 }
 
-.blog .blog-info .blog-author a{
+.blog .blog-info .blog-author a {
     text-decoration: none;
     color: #562EFF;
 }
 
+/* ----------
+course section
+---------- */
+
+.course-banner img {
+    width: 224px;
+    height: 104px;
+    margin-bottom: 10px;
+}
+
+.courses {
+    display: flex;
+    gap: 54px;
+    /* justify-content: space-evenly; */
+    /* text-align: center; */
+}
+
+.course-individual {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #00000013;
+}
+
+.course-name {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    margin: 0 0 10px 0;
+}
+
+.course-author {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+}
+
+.course-info {
+    color: #a2a2a2;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.course-info .course-rating .filled {
+    color: #FFC014;
+}
+
+.course-duration {
+    color: #FF4A60;
+    ;
+    background-color: #FFE4E8;
+    font-weight: 550;
+    border-radius: 14px;
+    padding: 7px;
+}
