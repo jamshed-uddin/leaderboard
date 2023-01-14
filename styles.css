@@ -49,7 +49,7 @@ header and nav secttion
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 350px;
+    gap: 22rem;
     background-color: #562EFF;
     color: #FFFFFF;
     padding: 20px 0;
@@ -171,7 +171,6 @@ course section
 
 .courses {
     display: flex;
-    gap: 54px;
     /* justify-content: space-evenly; */
     /* text-align: center; */
 }
@@ -216,4 +215,48 @@ course section
     font-weight: 550;
     border-radius: 14px;
     padding: 7px;
+}
+
+/* media query section */
+
+
+@media screen and (max-width:576px) {
+.header{
+    width: 100%;
+    gap: 3rem;
+}
+.logo, .navbar{
+    gap: 10px;
+}
+
+.navbar nav ul{
+    gap: 10px;
+}
+
+
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+    .player{
+        justify-content: center;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .blogs-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        flex-direction: column;
+        text-align: center;
+    }
+    .courses{
+        flex-direction: column;
+        text-align: center;
+    }
+    .course-info{
+     justify-content: center;
+    }
+
 }
